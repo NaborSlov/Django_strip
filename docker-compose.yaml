@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  strip:
+    build:
+      context: .
+    env_file:
+      - .env
+    ports:
+      - "80:8000"
+    restart: always
